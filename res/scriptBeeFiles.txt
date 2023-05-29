@@ -1,0 +1,5 @@
+create create create current 1 load bee.ppm current 3 load bee.jpg
+current 2 load bee.jpeg blur current 3 sepia current 1 sharpen create load bee.png
+greyscale invisible 4 saveAll png beeProject remove 4 remove 3 remove 2 remove 1 import beeProject
+invisible 3 invisible 2 save bee-sharpen.png invisible 1 visible 3 save bee-sepia.ppm invisible 3
+visible 2 save bee-blur.jpg invisible 2 visible 4 save bee-grey.ppm

@@ -1,0 +1,7 @@
+create loadcheckerboard 50 8 8 blur create loadcheckerboard 50 8 8 create loadcheckerboard 50 8 8
+create loadcheckerboard 50 8 8 create loadcheckerboard 50 8 8 current 2 sharpen sharpen sharpen
+invisible 1 invisible 3 invisible 5 save checkerboard-sharpened.png current 3 sepia current 4
+visible 3 invisible 2 save checkerboard-sepia.jpg greyscale invisible 3 visible 4
+save checkerboard-greyscale.ppm invisible 4 visible 1 save checkerboard-blur.png
+remove 3 saveall png checkerboardProject remove 4 remove 3 remove 2 remove 1
+import checkerboardProject current 1 greyscale save checkerboard-blur-greyscale.png

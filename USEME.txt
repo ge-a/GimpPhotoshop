@@ -1,0 +1,77 @@
+USEME:
+To use the GUI through the main method just follow these simple steps:
+- Run the program from the main method in the image util class
+- The GUI should now be open
+To use the GUI through the JAR file you can simply just run it and the GUI will automatically open.
+
+To run a script file, the GUI, or the text based controller you can also type in any of the command line
+arguments laid out in the assignment.
+
+General Notes for Using the GUI:
+- Any mistakes a user makes which cause illegal argument or state exceptions will be caught and displayed as
+  pop messages telling the user what they did wrong.
+- Be sure to create layers before loading on any images
+- If an action is cancelled, a message is shown saying the event was cancelled.
+
+How each commands works in the GUI:
+
+Create Layer:
+- Clicking on this button or selecting this from a drop down menu will
+  simply create a new empty layer which is invisible
+Remove Layer:
+- Clicking on this button or selecting this from a drop down menu will prompt the user
+  to input the index at which to remove the layer
+- Removing the layer from this index will also increment all the other layers accordingly such that
+  the order of the layer numbers stays consecutive
+Make Visible:
+- Clicking on this button or selecting this from a drop down menu will prompt the user to input
+  the index at which to make the layer visible
+Make Invisible:
+- Clicking on this button or selecting this from a drop down menu will prompt the user to input the index
+  at which to make the layer invisible
+Blur:
+- Clicking on this in any drop down menu will apply the blur filter to the current image
+- If applied when the current is the topmost visible image, the effects should be seen after a brief moment on
+  the displayed image
+Sharpen:
+- Clicking on this in any drop down menu will apply the sharpen filter to the current image
+- If applied when the current is the topmost visible image, the effects should be seen after a brief moment on the
+  displayed image
+Sepia:
+- Clicking on this in any drop down menu will apply the sepia filter to the current image
+- If applied when the current is the topmost visible image, the effects should be seen after a brief
+  moment on the displayed image
+Greyscale:
+- Clicking on this in any drop down menu will apply the greyscale filter to the current image
+- If applied when the current is the topmost visible image, the effects should be seen after a brief moment on
+  the displayed image
+Save All:
+- Clicking on this in any drop down menu will prompt the user to input the desired folder name for the images
+  to be saved into and the desired file type that the user wants to save the images as.
+Load Image:
+- Clicking on this in any drop down menu will open the file selector for the user, allowing them to open up
+  any jpeg, jpg, png, or ppm image to be loaded onto the image processing program.
+- Note that if there are spaces in the names of the file path of the image, the built in readers of the file
+  path will return an error
+Load MultiImage:
+- Clicking on this in any drop down menu will open the file selector for the user, allowing them to select
+  any folder to load into the program.
+- Note that the folder must be in the correct format with a proper text file relaying what image is at each layer,
+  and the visibility status of each layer
+- When saving all, folders are automatically saved in this correct format
+Save Image:
+- Clicking on this in any drop down menu will prompt the user to
+  input their desired file name for the image they want to save.
+- Saving an image will save the topmost visible image.
+Create Checkerboard:
+- Clicking on this in any drop down menu will prompt the user to input their desired size in
+  pixels of each tile, the number of tiles in each row, and the number of tiles in each column
+- Note that the checkerboard image will only be loaded on if the image set as the current is empty,
+  just like loading any other image.
+Down Size:
+- Clicking on this in the main drop down menu will prompt the user to input their desired width and
+  height of the resized multi-image.
+- If there is only one image and multiple empty layers, only the image is resized
+- If there are no images and just empty layers, an error message is shown.
+- The provided height and width must be less than the the height and width
+  of the current multi-image, and greater than zero.
